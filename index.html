@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,800;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<header>
+  <div id="headerCenter">
+    <div id="etc">
+      <p>ROCK</p>
+      <p>PAPER</p>
+      <p>SCISSORS</p>
+    </div>
+    <div id="divScore">
+      <p id="textScore">SCORE</p>
+      <input type="text" id="inputScore" value="0">
+    </div>
+  </div>
+
+</header>
+
+<body>
+  <!-- <img src="design/original/desktop-step-4-lose.jpg" alt=""> -->
+  <div id="container">
+    <img src="images/bg-triangle.svg" alt="" id="triangle">
+    <div class="circulo" id="circulo1" onclick="cliquei1()">
+      <img src="images/icon-paper.svg" alt="" id="paper">
+    </div>
+        
+    <div class="circulo" id="circulo2" onclick="cliquei2()">
+      <img src="images/icon-scissors.svg" alt="" id="scissors">
+    </div>
+      
+    <div class="circulo" id="circulo3" onclick="cliquei3()">
+      <img src="images/icon-rock.svg" alt="" id="rock">
+    </div>
+  </div>
+
+    <div id="divPlayer1" >
+        <p id="subtitulo-1" class="subtitulo1">YOU PICKED</p>    
+        <div class="circuloPlayer1" id="circulo-1-player1" onclick="cliquei()" hidden>
+          <img src="images/icon-paper.svg" alt="" id="paperBefore">
+        </div>
+        <div class="circuloPlayer1" id="circulo-2-player1" onclick="cliquei()">
+          <img src="images/icon-scissors.svg" alt="" id="scissorsBefore">
+        </div>
+        <div class="circuloPlayer1" id="circulo-3-player1" onclick="cliquei()">
+          <img src="images/icon-rock.svg" alt="" id="rockBefore">
+  
+  </div>
+    <div id="divPlayer2" >
+      <p id="subtitulo-2" class="subtitulo2">THE HOUSE PICKED</p>
+      <div class="circuloPlayer2" id="circulo-1-player2" onclick="cliquei()">
+        <img src="images/icon-paper.svg" alt="" id="paperBefore">
+      </div>
+
+      <div class="circuloPlayer2" id="circulo-2-player2" onclick="cliquei()">
+        <img src="images/icon-scissors.svg" alt="" id="scissorsBefore">
+      </div>
+
+      <div class="circuloPlayer2" id="circulo-3-player2" onclick="cliquei()">
+        <img src="images/icon-rock.svg" alt="" id="rockBefore">
+      </div>
+    </div>
+    <!-- <div id="borderGradMaster">
+      <div class="borderGrad" id="borderGrad1">
+      </div>
+      <div class="borderGrad" id="borderGrad2">
+      </div>
+      <div class="borderGrad" id="borderGrad3">
+      </div>
+    </div> -->
+
+<div id="playAgain">
+  <p Id = "you" hidden>YOU</p>
+  <p id="win" hidden>WIN</p>
+  <p id="lose" hidden>LOSE</p>
+  <p id="drew" hidden>DREW</p>
+  <button id="playAgainButton" onclick="reload()" hidden>PLAY AGAIN</button>
+</div>
+<!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</body>
+
+</html>
